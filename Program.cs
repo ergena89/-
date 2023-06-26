@@ -13,3 +13,16 @@
 
 
 // решение
+string[] arr = new string[] {"4254", "87631", "65214", "5", "459", "7878", "32"};
+string[] rez = new string[arr.Length];
+int j = 0;
+for (int i = 0; i < arr.Length; i++)
+{
+    if (arr[i].Length <= 3)
+    {
+        rez[j] = arr[i];
+        j++;
+    }
+}
+
+PrintArray(rez);
