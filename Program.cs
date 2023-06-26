@@ -8,9 +8,20 @@
 // записываем выбраные элементы в пустой массив
 // выводим получившийся итоговый массив (только не пустые ячейки)
 
-
 //методы
+void PrintArray(string[] rez,int index = 0)
+{
+    if (index > rez.Length-1 || index == 0)
+        index = rez.Length-1;
 
+        System.Console.Write("[");
+    for (int i = 0; i <= index; i++)
+    {
+        Console.Write($"{rez[i]},");
+    }
+    System.Console.Write("]");
+    Console.WriteLine();
+}
 
 // решение
 string[] arr = new string[] {"4254", "87631", "65214", "5", "459", "7878", "32"};
