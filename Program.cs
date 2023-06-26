@@ -36,4 +36,4 @@ for (int i = 0; i < arr.Length; i++)
     }
 }
 
-PrintArray(rez);
+PrintArray(rez, j-1);
